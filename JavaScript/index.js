@@ -136,4 +136,105 @@ console.log(Boolean("oi"));
 //alert(texto2 + 5;)
 
 //const numero2 = Number(prompt("digite um número:"));
-console.log(numero2 + 5);
+//console.log(numero12 + 5);
+
+//Operadores aritméticos
+console.log(2 + 3); //soma
+console.log(5 - 2); //subtração 
+console.log( 4 * 2 ); //multiplicação
+console.log(10 / 2); //divisão 
+console.log(10 % 3); //resto da divisão
+console.log(2 ** 3); //potência
+
+console.log(2 + 3 * 4);
+console.log((2 + 3) * 4);
+
+//Operadores de Comparação
+console.log(5 == "5"); //true -> valores são iguais (após conversão)
+console.log(5 == 5); //true -> valores são iguais
+
+console.log(5 === "5"); //false -> tipos diferentes (number vs string)
+console.log(5 === 5); // true -> valor E tipos iguais
+
+console.log(5 != "5"); //false -> valores NÃO são diferentes (após conversão)
+console.log(5 != 7); //true -> valores SÃO diferentes
+
+console.log(5 !=="5"); //true -> SÃO diferentes (tipos diferentes)
+console.log(5 !== 5); //false -> NÃO são diferentes (identicos)
+
+console.log(!true); //inverte console.log(true)
+console.log(!false); //inverte console.log(false)
+
+const idade3 = 15;
+console.log(idade3 >= 18); //false
+console.log((!idade3 >= 18)); //true
+
+const nome8 ="";
+const nomeVazio = nome === ""; //true
+console.log(nomeVazio);
+
+const nomeNaovazio = nome8 !== "" //false
+
+console.log(!!true); //cancela negação, ele insiste 
+
+//Estrutura sequencial (Entrada -> Processamento -> Saída)
+
+//Entrada
+//const nome9 = prompt("Digite seu nome:");
+//processamento
+//saída
+//console.log("Olá," + nome9 + "!");
+
+//Entrada Soma de dois numeros
+const n1 = Number(prompt("Digite o primeiro número:"))
+const n2 = Number(prompt("Digite o segundo número:"))
+// processamento
+const soma = n1 + n2; 
+//Saída
+alert("Resultado:" + soma);
+
+//Dobro de um número
+const numero12 = Number(prompt("Digite o primeiro número:"))
+const dobro = numero12 * 2;
+alert (`O dobro de ${numero12}`)
+
+//Média de duas notas
+const nota1 = Number(prompt("Primeira Nota"))
+const nota2 = Number(prompt("Segunda Nota"))
+const media = (nota1 + nota2) / 2;
+
+alert(`Média: ${media.toFixed(1)}`);
+
+//Idade detalhada 
+//Converter anos em meses, dias, horas e minutos.
+
+//Faça um programa que leia a **idade de uma pessoa em anos** e mostre a mesma idade aproximada em:
+
+//-Meses
+//-Dias
+//-Horas
+//-Minutos
+//Use **365 dias por ano** como simplificação.
+
+const anos = Number(prompt("Digite sua idade em anos:"));
+const meses = anos * 12;
+const dias = anos * 365;
+const horas = dias * 24;
+const minutos = horas * 60
+
+console.log(`Idade Informada: ${anos}anos`);
+console.log("-----------------------");
+console.log(`${meses} meses`);
+console.log(`${dias} dias`);
+console.log(`${horas} horas`);
+console.log(`${minutos} minutos`);
+
+// Celsius -> Fahrenheit
+//Converter temperatura de Celsius para Fahrenheit.
+
+// Fórmula: F = (C x 9/5) + 32
+
+const celsius = Number(prompt("Temperatura em C:"));
+
+const f = (celsius * 9/5) + 32;
+alert(`${celsius} c = ${f.toFixed(1)} F`);
