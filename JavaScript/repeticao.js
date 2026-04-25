@@ -253,7 +253,7 @@ const estoque = {
     "Webcam": 22
 }
 
-console.log("Estoque:"\n);
+console.log("Estoque:\n");
 for (const produto in estoque) {
     const quantidade = estoque [produto];
 
