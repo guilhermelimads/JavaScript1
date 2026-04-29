@@ -359,7 +359,7 @@ for (const aluno of alunos); {
     console.log(´${aluno.nome} - Nota: ${aluno.nota}´);
 
 }*/
-
+/*
 const frase = prompt ("Digite uma frase:");
 
 const vogais ="aeiouAEIOU";
@@ -377,5 +377,16 @@ for (const letra of frase) {
 console.log(`\nFrase: ${frase}`);
 console.log(`Vogais encontradas: ${contador}`);
 console.log(`Vogais encontradas: ${vogaisEncontradas}`);
+*/
 
+//exercicio 
+//soma de 1 até N
 
+const N = Number(prompt("Digite um número:"));
+let soma = 0;
+for (let i = 1; i <= N; i++) {
+    soma +=  i;
+
+}
+
+console.log(´Soma de 1 até ${N} = ${soma}´);
