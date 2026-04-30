@@ -379,14 +379,4 @@ console.log(`Vogais encontradas: ${contador}`);
 console.log(`Vogais encontradas: ${vogaisEncontradas}`);
 */
 
-//exercicio 
-//soma de 1 até N
-
-const N = Number(prompt("Digite um número:"));
-let soma = 0;
-for (let i = 1; i <= N; i++) {
-    soma +=  i;
-
-}
-
-console.log(´Soma de 1 até ${N} = ${soma}´);
+//exercicio 2
